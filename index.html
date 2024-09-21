@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komitetų Quizas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container"></div>
+        <img src="logo.png" alt="Organization Logo" class="logo">
+    </div>
+     <div class="container">
+        <h1>Surask sau labiausiai tinkantį Komitetą!</h1>
+        <p>Atsakyk į 5 trumpus klausimus ir atrask savo vietą skyriuje.</p>
+        
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Ką mėgsti veikti laisvalaikiu?</h3>
+                <label><input type="radio" name="q1" value="hr"> Susipažinti su naujais žmonėmis.</label><br>
+                <label><input type="radio" name="q1" value="education"> Bendrauti ar diskutuoti su kitais žmonėmis.</label><br>
+                <label><input type="radio" name="q1" value="events"> Organizuoti susirinkimus ar šventes.</label><br>
+                <label><input type="radio" name="q1" value="communications"> Fotografuoti, kelti įrašus į socialinę mediją.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Kokiais savo įgūdžiais labiausiai pasitiki?</h3>
+                <label><input type="radio" name="q2" value="communications"> Kūrybinis rašymas, dizainas.</label><br>
+                <label><input type="radio" name="q2" value="hr"> Administravimas ir konfliktų sprendimas.</label><br>
+                <label><input type="radio" name="q2" value="education"> Šnekėti viešai ir diskutuoti.</label><br>
+                <label><input type="radio" name="q2" value="events"> Spręsti iššukius ir strateguoti.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Kokie tavo tikslai organizacijoje?</h3>
+                <label><input type="radio" name="q3" value="events"> Organizuoti įdomius renginius.</label><br>
+                <label><input type="radio" name="q3" value="hr"> Bendrauti su žmonėmis ir administruoti chatus.</label><br>
+                <label><input type="radio" name="q3" value="communications"> Kurti postus ir eventus.</label><br>
+                <label><input type="radio" name="q3" value="education"> Vesti pamokas ir išmokti viešo kalbėjimo.</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Kurios iš šitų profesijų tave labiausiai traukia?</h3>
+                <label><input type="radio" name="q4" value="communications"> Fotografavimas ir Filmavimas, Socialinių paskyrų valdymas, Dizainas.</label><br>
+                <label><input type="radio" name="q4" value="education"> Diplomatija, Politika.</label><br>
+                <label><input type="radio" name="q4" value="events"> Renginių organizavimas.</label><br>
+                <label><input type="radio" name="q4" value="hr"> Administracija, Socialiniai darbai.</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Koksai žodis geriausiai apibudina tave?</h3>
+                <label><input type="radio" name="q5" value="hr"> Bendravimas.</label><br>
+                <label><input type="radio" name="q5" value="events"> Planavimas.</label><br>
+                <label><input type="radio" name="q5" value="education"> Diskutavimas.</label><br>
+                <label><input type="radio" name="q5" value="communications"> Kūrybingumas.</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" onclick="calculateResult()">Submit</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result" class="hidden">
+            <h2>Tau rekomenduojamas Komitetas yra:</h2>
+            <p id="committee"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
